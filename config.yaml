@@ -1,0 +1,25 @@
+baseURL: http://example.org/
+defaultContentLanguage: en
+languageCode: en-us
+title: Six Sided Heroes
+
+# this is so Hugo Will Render md To HTML
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+
+# menu links via config file.
+menu:
+  main:
+  - name: Github
+    url: https://www.github.com
+    weight: 90
+    params:
+      blank: true
+  - name: Google
+    url: https://www.goggle.com
+    weight: 100
+    params:
+      blank: true
