@@ -3,6 +3,9 @@ defaultContentLanguage: en
 languageCode: en-us
 title: Six Sided Heroes
 
+# Alternate Copyright company text
+copyright: Digital Hammock Web Development 
+
 # this is so Hugo Will Render md To HTML
 markup:
   goldmark:
