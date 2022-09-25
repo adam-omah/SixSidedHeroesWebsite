@@ -3,12 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>{{ .Title }}</h1>
-                {{ with .Params.subtitle }}
-                <h2 class="fst-italic fs-3 text-muted">
-                    {{ . }}
-                </h2>
-                {{ end }}
+                {{ partial "title" . }}
                 <div class="py-3">
                     {{ .Content }}
                 </div>

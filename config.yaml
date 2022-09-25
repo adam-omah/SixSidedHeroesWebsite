@@ -1,7 +1,17 @@
-baseURL: http://example.org/
+baseURL: http://localhost/
+# Diable taxonmy pages (Defaults)
+disableKinds:
+- taxonomy
+- taxonomyTerm
 defaultContentLanguage: en
 languageCode: en-us
 title: Six Sided Heroes
+
+
+# changes the default pagination
+paginate: 3
+#changes the sumary lenght
+summaryLength: 20
 
 # Alternate Copyright company text
 copyright: Digital Hammock Web Development 
@@ -16,13 +26,8 @@ markup:
 # menu links via config file.
 menu:
   main:
-  - name: Github
-    url: https://www.github.com
-    weight: 90
-    params:
-      blank: true
-  - name: Google
-    url: https://www.goggle.com
+  - name: Digital Hammock Web Dev
+    url: https://digitalhammock.com/
     weight: 100
     params:
       blank: true

@@ -1,3 +1,23 @@
+.bg-base{
+    background-color: #f0d9c2;
+}
+
+
 h2 {
     font-size: 2rem;
+}
+
+
+// changes to Cards
+
+.card-container{
+    border-color: #795548;
+}
+
+.card-body{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }

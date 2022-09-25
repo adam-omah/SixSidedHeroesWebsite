@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Six Sided Heroes"
 date: 2022-09-22T11:45:17+01:00
 draft: false
 menu: main
@@ -11,26 +11,19 @@ btn1:
 btn2:
     text: Hugo Docs
     url: http://gohugo.io/
-cardsTitle: Our Services
+cardsTitle: Upgrade Your Heroes
 cards:
--   title: Card 1 Title
+-   title: Gather Epic Items
     img: /images/Screenshot_20220210-185728.png
-    text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, repellendus quas aliquid ratione eligendi libero hic aliquam odio deleniti in?
-    btn:
-        text: Button 1 Text
-        url: "#"
--   title: Card 2 Title
+    text: Use the Item Shop to upgrade your heroes, buy from a selection of over 100 different Weapons and Armours!
+
+-   title: Gain Gold
     img: /images/Screenshot_20220210-185837.png
-    text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, repellendus quas aliquid ratione eligendi libero hic aliquam odio deleniti in?
-    btn:
-        text: Button 2 Text
-        url: "#"
--   title: Card 3 Title
+    text: Earn gold from every run, use this gold to buy new items or new heroes.
+
+-   title: Equip Your Heroes
     img: /images/Screenshot_20220210-185954.png
-    text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, repellendus quas aliquid ratione eligendi libero hic aliquam odio deleniti in?
-    btn:
-        text: Button 3 Text
-        url: "#"
+    text: Using the Items you bought equip your heroes with the best gear and fight the hordes of evil that endanger your Kingdom!
 
 
 ---

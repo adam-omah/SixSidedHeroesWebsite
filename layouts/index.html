@@ -39,14 +39,14 @@
         <div class="row pb-3">
             {{ range .Params.cards }}
             <div class="col-md-4">
-                <div class="card mb-3">
+                <div class="card mb-3 card-container">
                     <img src="{{ .img }}" class="card-img-top img-fluid" alt="{{ .title }}">
                     <div class="card-body">
                         <h5 class="card-title">{{ .title }}</h5>
                         <p class="card-text">{{ .text }}</p>
                         {{ with .btn }}
                         {{ if and .text .url }}
-                            <a href="{{ .url }}" class="btn btn-primary">{{ .text}}</a>
+                            <a href="{{ .url }}" class="btn btn-outline-secondary">{{ .text}}</a>
                         {{ end }}
                         {{ end }}
                     </div>
