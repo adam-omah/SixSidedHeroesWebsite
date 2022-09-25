@@ -1,20 +1,15 @@
 {{ define "main" }}
 <section class="hero">
-    <div class="container col-xxl-8">
-        <div class="row align-items-center justify-content-center py-5 g-5">
-            <div class="col-10 col-sm-8 col-lg-6">
+    <div class="container-fluid col-xxl-10">
+        <div class="row align-items-center justify-content-center py-3">
+            <div class="col-10 col-sm-8 col-lg-5 py-3">
                 <img src="images/Screenshot_20220210-190059.png" alt="Test Image" class="img-fluid d-block mx-auto">
             </div>
-            <div class="col-lg-6 order-lg-first">
+            <div class="col-lg-5 col-sm-10 order-lg-first">
                 <h1>{{ .Params.heading }}</h1>
+                <h3>{{ .Params.subHeading }}</h3>
                 <p>{{ .Content }}</p>
                 <div class="d-grid gap-2 d-md-flex">
-                    {{ with .Params.btn1 }}
-                    {{ if and .text .url }}
-                    <button type="button" href="{{ .url }}" class="btn btn-lg btn-primary px-4 me-md-2">
-                        {{ .text }}</button>
-                    {{ end }}
-                    {{ end }}
                     {{ with .Params.btn2 }}
                     {{ if and .text .url }}
                     <button type="button" href="{{ .btn2.url }}" class="btn btn-lg btn-outline-secondary px-4">
@@ -55,6 +50,14 @@
             {{ end }}
         </div>
     </div>
+</section>
+
+<section>
+    {{ partial "built_with" . }}
+</section>
+
+<section>
+    {{ partial "contact_form" . }}
 </section>
 
 

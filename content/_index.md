@@ -4,12 +4,10 @@ date: 2022-09-22T11:45:17+01:00
 draft: false
 menu: main
 weight: 10
-heading: Six Sided Heroes Website In Dev.
-btn1:
-    text: Boot Strap 5 Docs
-    url: http://getbootstrap.com/docs
+heading: Six Sided Heroes
+subHeading: Epic Dice RPG for Mobile.
 btn2:
-    text: Hugo Docs
+    text: Contact Us
     url: http://gohugo.io/
 cardsTitle: Upgrade Your Heroes
 cards:
@@ -28,5 +26,7 @@ cards:
 
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad porro totam odit beatae tenetur distinctio, accusantium sequi minus quaerat soluta corporis rem laborum nostrum non quos, similique aliquam nulla dignissimos veritatis aut. Quisquam nulla veniam a sapiente labore quos, velit minus modi consequatur exercitationem hic excepturi sed sint facilis!
+Six Sided Heroes is a Andriod Mobile RPG game based around Dice Battles. Your Heroes face a multitude of different enemies in fast paced Dice battles.
+
+Gather the greatest Heroes in the realm and push back the forces of evil! You can have a total of 5 Heroes on your team each with different abilities and skills to attack, defend and heal.
 
