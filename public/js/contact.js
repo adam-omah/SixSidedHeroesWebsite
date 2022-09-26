@@ -6,6 +6,7 @@ const form = document.getElementById("js-contactForm");
 
 window.submitForm = () => {
     form.submit();
+    
 }
 
 //listens for submit button

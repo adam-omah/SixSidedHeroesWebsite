@@ -17,5 +17,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Thank You</title>
+      <link>http://localhost/thank-you/</link>
+      <pubDate>Mon, 26 Sep 2022 18:16:10 +0100</pubDate>
+      
+      <guid>http://localhost/thank-you/</guid>
+      <description>Thank you for contact us, will be in touch soon</description>
+    </item>
+    
   </channel>
 </rss>
