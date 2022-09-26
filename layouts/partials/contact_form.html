@@ -2,26 +2,45 @@
     <div class="row align-items-center justify-content-center py-5">
         <div class="col col-lg-6 col-md-8 col-sm-10">
             <h2 class="text-center">Get In Touch</h2>
-            <form action="#">
+            <form action="/php/contact.php" method="POST" id="js-contactForm"
+                class="needs-validation" novalidate>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="inputName" placeholder="First Name, Last Name" aria-labelledby="inputNameLabel">
+                    <input type="text" class="form-control" id="inputName" placeholder="First Name, Last Name"
+                        aria-labelledby="inputNameLabel" required>
                     <label for="inputName" id="inputNameLabel">Name</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" aria-labelledby="inputEmailLabel">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com"
+                        aria-labelledby="inputEmailLabel" required>
                     <label for="inputEmail" id="inputEmailLabel">Email address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="inputSubject" placeholder="Awesome Game" aria-labelledby="inputSubjectLabel">
+                    <input type="text" class="form-control" name="subject" id="inputSubject" placeholder="Awesome Game"
+                        aria-labelledby="inputSubjectLabel" required>
                     <label for="inputSubject" id="inputSubjectLabel">Subject</label>
                 </div>
+                {{/*  <input type="text" name="_enemySlain" style="display: none;">  */}}
                 <div class="form-floating mb-3">
-                    <textarea name="message" class="form-control" id="inputMessage" placeholder="Message" 
-                    aria-labelledby="inputMessageLabel"></textarea>
+                    <textarea name="message" class="form-control" id="inputMessage" placeholder="Message"
+                        aria-labelledby="inputMessageLabel" required></textarea>
                     <label for="inputMessage" id="inputMessageLabel">Message</label>
                 </div>
-                <button type="submit" class="btn btn-outline-secondary">Send Message</button>
+                {{/*  <div class="g-recaptcha" data-sitekey="6Lc7KjAiAAAAALGZGSAK12FhLA5fugQDi5SVBNt-" 
+                data-callback="submitForm" data-size="invisible">
+                </div>
+
+                <button name="submit" type="submit" class="btn btn-outline-secondary">Send Message</button>  */}}
+                <button class="g-recaptcha btn btn-outline-secondary"
+                    data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit'>Send
+                    Message</button>
             </form>
+            
+
         </div>
     </div>
 </div>
+
+<script src="/js/contact.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+

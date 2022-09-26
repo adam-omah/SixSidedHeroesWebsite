@@ -31,3 +31,15 @@ menu:
     weight: 100
     params:
       blank: true
+
+# media php
+mediaTypes:
+  application/x-php:
+    suffixes:
+      - php
+outputFormats:
+  PHP:
+    mediaType: application/x-php
+    isHTML: true
+    baseName: index
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Six Sided Heroes - Contact Us</title>
+
+
+
+
+
+
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/six_sided_heroes_favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/six_sided_heroes_favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/six_sided_heroes_favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/six_sided_heroes_favicon/site.webmanifest">
+<link rel="mask-icon" href="/images/six_sided_heroes_favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00a300">
+<meta name="theme-color" content="#ffffff">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/main.css"></head>
+    
+    
+    <body class="bg-base">
+        <header><nav class="navbar navbar-expand-lg bg-base">
+    <div class="container-fluid">
+      <a href="#"><img class="nav-logo" src="/images/Six-Sided-Heroes-Logo.png" alt="Six Sided Heroes Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link " 
+            href="/" >Six Sided Heroes</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link  active" aria-current="page " 
+            href="/contact_us/" >Contact Us</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link " 
+            href="https://digitalhammock.com/"  target="_blank" rel="noopener">Digital Hammock Web Dev</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav></header>
+        
+        <main>
+    
+    <div class="container-fluid">
+    <div class="row align-items-center justify-content-center py-5">
+        <div class="col col-lg-6 col-md-8 col-sm-10">
+            <h2 class="text-center">Get In Touch</h2>
+            <form action="/php/contact.php" method="POST" id="js-contactForm"
+                class="needs-validation" novalidate>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="inputName" placeholder="First Name, Last Name"
+                        aria-labelledby="inputNameLabel" required>
+                    <label for="inputName" id="inputNameLabel">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com"
+                        aria-labelledby="inputEmailLabel" required>
+                    <label for="inputEmail" id="inputEmailLabel">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="subject" id="inputSubject" placeholder="Awesome Game"
+                        aria-labelledby="inputSubjectLabel" required>
+                    <label for="inputSubject" id="inputSubjectLabel">Subject</label>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <textarea name="message" class="form-control" id="inputMessage" placeholder="Message"
+                        aria-labelledby="inputMessageLabel" required></textarea>
+                    <label for="inputMessage" id="inputMessageLabel">Message</label>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6Lc7KjAiAAAAALGZGSAK12FhLA5fugQDi5SVBNt-" 
+                data-callback="submitForm" data-size="invisible">
+                </div>
+
+                <button name="submit" type="submit" class="btn btn-outline-secondary">Send Message</button>
+                
+            </form>
+            <div id="thanks">
+                &lt;?=$thankYou ?>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/contact.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+
+        </main>
+        <footer><div class="container-fluid">
+    <div class="row">
+        <div class="col bg-dark text-white p-3 text-center">
+           Copyright &copy; <span id="js-year"><noscript>2022</noscript></span> Digital Hammock Web Development
+        </div>
+    </div>
+</div>
+
+</footer>
+         
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="/js/footer.js"></script>
+
+    </body>
+</html>
+

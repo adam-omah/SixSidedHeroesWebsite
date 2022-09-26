@@ -33,6 +33,9 @@ h2 {
 #inputMessage {
   height: 10rem; }
 
+.hidden {
+  display: none; }
+
 .btn-outline-secondary {
   --bs-btn-color: #000000;
   --bs-btn-border-color: #000000;
