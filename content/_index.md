@@ -8,7 +8,7 @@ heading: Six Sided Heroes
 subHeading: Epic Dice RPG for Mobile.
 btn2:
     text: Contact Us
-    url: http://gohugo.io/
+    url: "/contact_us/"
 cardsTitle: Upgrade Your Heroes
 cards:
 -   title: Gather Epic Items
