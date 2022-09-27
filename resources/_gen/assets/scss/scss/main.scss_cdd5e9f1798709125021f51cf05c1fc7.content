@@ -59,9 +59,16 @@ h2 {
 .g-recaptcha {
   margin-bottom: 1.5rem; }
 
+@media (min-width: 768px) {
+  .d-grid.d-md-flex.google-play {
+    flex-direction: column; } }
+
 img.playStoreImage {
   max-width: 15rem;
   margin-left: -1rem; }
+
+p.smallPrint {
+  font-size: .5rem; }
 
 footer a {
   text-decoration: none;

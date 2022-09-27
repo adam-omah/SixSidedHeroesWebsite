@@ -82,9 +82,20 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+
+.d-grid.d-md-flex.google-play {
+    @media (min-width: 768px) {
+        flex-direction: column;
+    }
+}
+
 img.playStoreImage {
     max-width: 15rem;
     margin-left: -1rem;
+}
+
+p.smallPrint {
+    font-size: .5rem;
 }
 // when two buttons on homepage
 // .btn.btn-lg.btn-outline-secondary{

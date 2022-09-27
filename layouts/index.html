@@ -10,21 +10,21 @@
                 <h1>{{ .Params.heading }}</h1>
                 <h3>{{ .Params.subHeading }}</h3>
                 <p>{{ .Content }}</p>
-                <div class="d-grid gap-2 d-md-flex">
-                    
-                </div>
-                <div class="d-grid gap-2 d-md-flex">
-                    {{/*  {{ with .Params.btn2 }}
+                {{/*  <div class="d-grid gap-2 d-md-flex">
+                    {{ with .Params.btn2 }}
                     {{ if and .text .url }}
 
                     <a href="{{ .url }}" class="btn btn-lg btn-outline-secondary px-2 py-2">
                         {{ .text }}</a>
                     {{ end }}
-                    {{ end }}  */}}
+                    {{ end }}
+                </div>  */}}
+                <div class="d-grid d-md-flex google-play">
                     <a
                         href='https://play.google.com/store/apps/details?id=com.DigitalHammockGames.SixSidedHeroes&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
                             class="playStoreImage" alt='Get it on Google Play'
                             src='/images/google-play-badge.png' /></a>
+                            <p class="smallPrint">Google Play and the Google Play logo are trademarks of Google LLC.</p>
                     
                 </div>
             </div>
