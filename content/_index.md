@@ -12,15 +12,15 @@ btn2:
 cardsTitle: Upgrade Your Heroes
 cards:
 -   title: Gather Epic Items
-    img: /images/Screenshot_20220210-185728.png
+    img: /images/shop_items.jpg
     text: Use the Item Shop to upgrade your heroes, buy from a selection of over 100 different Weapons and Armours!
 
 -   title: Gain Gold
-    img: /images/Screenshot_20220210-185837.png
+    img: /images/main_menu.jpg
     text: Earn gold from every run, use this gold to buy new items or new heroes.
 
 -   title: Equip Your Heroes
-    img: /images/Screenshot_20220210-185954.png
+    img: /images/equip_your_heroes.jpg
     text: Using the Items you bought equip your heroes with the best gear and fight the hordes of evil that endanger your Kingdom!
 
 
