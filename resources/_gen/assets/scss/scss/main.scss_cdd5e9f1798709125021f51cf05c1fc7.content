@@ -52,4 +52,7 @@ h2 {
   --bs-btn-disabled-border-color: #000000;
   --bs-gradient: none; }
 
+.g-recaptcha {
+  margin-bottom: 1.5rem; }
+
 /*# sourceMappingURL=main.css.map */
