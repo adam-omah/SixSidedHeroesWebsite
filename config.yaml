@@ -1,4 +1,4 @@
-baseURL: http://localhost/
+baseURL: https://www.sixsidedheroes.com/
 # Diable taxonmy pages (Defaults)
 disableKinds:
 - taxonomy
@@ -15,6 +15,7 @@ summaryLength: 20
 
 # Alternate Copyright company text
 copyright: Digital Hammock Web Development 
+copyrightURL: https://digitalhammock.com/
 
 # this is so Hugo Will Render md To HTML
 markup:

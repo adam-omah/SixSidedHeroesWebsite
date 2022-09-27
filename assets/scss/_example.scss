@@ -1,7 +1,12 @@
+
+
 .bg-base{
     background-color: #f0d9c2;
 }
 
+h1,h2,h3,h4,h5,.btn{
+    font-family: 'Germania One', cursive;
+}
 
 
 h2 {
@@ -75,4 +80,16 @@ h2 {
 // G-Recaptcha padding bottom.
 .g-recaptcha {
     margin-bottom: 1.5rem;
+}
+
+footer{
+    a{
+        text-decoration: none;
+        color: #fff;
+        
+    }
+    a:hover{
+        text-decoration: underline;
+        color: #ccc;
+    }
 }
