@@ -1,22 +1,31 @@
 {{ define "main" }}
 <section class="hero">
-    <div class="container-fluid col-xxl-10">
+    <div class="container-fluid col-xxl-10 pb-5">
         <div class="row align-items-center justify-content-center py-3">
             <div class="col-10 col-sm-8 col-lg-5 py-3">
-                <img src="images/HeaderImage.WebP" alt="Epic Dice Battles Header Image" class="img-fluid d-block mx-auto">
+                <img src="images/HeaderImage.WebP" alt="Epic Dice Battles Header Image"
+                    class="img-fluid d-block mx-auto">
             </div>
             <div class="col-lg-5 col-sm-10 order-lg-first">
                 <h1>{{ .Params.heading }}</h1>
                 <h3>{{ .Params.subHeading }}</h3>
                 <p>{{ .Content }}</p>
                 <div class="d-grid gap-2 d-md-flex">
-                    {{ with .Params.btn2 }}
-                    {{ if and .text .url }}
                     
-                    <a  href="{{ .url }}" class="btn btn-lg btn-outline-secondary px-4">
+                </div>
+                <div class="d-grid gap-2 d-md-flex">
+                    {{/*  {{ with .Params.btn2 }}
+                    {{ if and .text .url }}
+
+                    <a href="{{ .url }}" class="btn btn-lg btn-outline-secondary px-2 py-2">
                         {{ .text }}</a>
                     {{ end }}
-                    {{ end }}
+                    {{ end }}  */}}
+                    <a
+                        href='https://play.google.com/store/apps/details?id=com.DigitalHammockGames.SixSidedHeroes&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+                            class="playStoreImage" alt='Get it on Google Play'
+                            src='/images/google-play-badge.png' /></a>
+                    
                 </div>
             </div>
         </div>
@@ -24,7 +33,7 @@
 </section>
 
 <section>
-    <div class="container">
+    <div class="container pb-5">
         <div class="row">
             <div class="col text-center">
                 <h2 class="fs-1 pb-3">
@@ -42,7 +51,7 @@
                         <p class="card-text">{{ .text }}</p>
                         {{ with .btn }}
                         {{ if and .text .url }}
-                            <a href="{{ .url }}" class="btn btn-outline-secondary">{{ .text}}</a>
+                        <a href="{{ .url }}" class="btn btn-outline-secondary">{{ .text}}</a>
                         {{ end }}
                         {{ end }}
                     </div>
@@ -53,12 +62,12 @@
     </div>
 </section>
 
-<section>
+<section class="pb-5">
     {{ partial "built_with" . }}
 </section>
 
 <section>
-    {{/*  contact cta  */}}
+    {{/* contact cta */}}
 </section>
 
 

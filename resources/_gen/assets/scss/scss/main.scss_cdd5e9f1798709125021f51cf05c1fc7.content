@@ -59,6 +59,10 @@ h2 {
 .g-recaptcha {
   margin-bottom: 1.5rem; }
 
+img.playStoreImage {
+  max-width: 15rem;
+  margin-left: -1rem; }
+
 footer a {
   text-decoration: none;
   color: #fff; }

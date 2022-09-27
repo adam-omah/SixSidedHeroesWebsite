@@ -82,6 +82,26 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+img.playStoreImage {
+    max-width: 15rem;
+    margin-left: -1rem;
+}
+// when two buttons on homepage
+// .btn.btn-lg.btn-outline-secondary{
+//     display: flex;
+//     min-width: 12rem;
+//     height: 80%;
+//     align-items: center;
+//     justify-content: center;
+// }
+// .d-md-flex {
+//     align-items: center;
+// }
+// .d-grid.gap-2.d-md-flex {
+//     justify-items: center;
+//     justify-content: space-evenly;
+// }
+
 footer{
     a{
         text-decoration: none;
