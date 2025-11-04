@@ -12,11 +12,6 @@
             href="{{ .URL }}" {{if eq .Params.blank true }} target="_blank" rel="noopener"{{ end }}> <h4>{{ .Name }}</h4></a>
           </li>
         {{ end }}
-
-        {{/* Always render a Privacy Policy link in the navbar */}}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ "/privacy/" | relURL }}"><h4>Privacy Policy</h4></a>
-        </li>
         </ul>
       </div>
     </div>
