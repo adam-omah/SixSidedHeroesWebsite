@@ -22,9 +22,10 @@ jobs:
           extended: true
 
       - name: Build the site
-        # Ensure assets link correctly when deployed to GitHub Pages for this repo.
-        # Replace the baseURL below if you change the repository name or want a custom domain.
-        run: hugo --minify --baseURL "https://adam-omah.github.io/SixSidedHeroesWebsite/"
+        # We generate relative URLs in `config.yaml` (relativeURLs: true),
+        # so don't pass a --baseURL here — keep the build portable and avoid
+        # accidentally double-prefixing repository paths on GitHub Pages.
+        run: hugo --minify
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
