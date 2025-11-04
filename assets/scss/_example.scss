@@ -1,7 +1,14 @@
 
 
 .bg-base{
+        background-color: #f0d9c2;
+}
+
+/* Use a slightly more specific selector to ensure the background
+     applies even when other styles (like Bootstrap) are present. */
+body.bg-base {
     background-color: #f0d9c2;
+    min-height: 100vh;
 }
 
 h1,h2,h3,h4,h5,.btn{
