@@ -9,7 +9,7 @@
         {{ range .Site.Menus.main }}
           <li class="nav-item">
             <a class="nav-link {{ if $.IsMenuCurrent "main" .}} active" aria-current="page {{ end }}" 
-            href="{{ .URL }}" {{if eq .Params.blank true }} target="_blank" rel="noopener"{{ end }}> <h4>{{ .Name }}</h4></a>
+            href="{{ .URL | relURL }}" {{if eq .Params.blank true }} target="_blank" rel="noopener"{{ end }}> <h4>{{ .Name }}</h4></a>
           </li>
         {{ end }}
         </ul>
