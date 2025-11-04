@@ -6,24 +6,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        {{/* Track whether a privacy link is already present in the menu */}}
-        {{ .Scratch.Set "hasPrivacy" false }}
         {{ range .Site.Menus.main }}
-          {{ if or (eq .URL "/privacy/") (eq .Identifier "privacy") (eq .Name "Privacy") (eq .Name "Privacy Policy") }}
-            {{ .Scratch.Set "hasPrivacy" true }}
-          {{ end }}
           <li class="nav-item">
             <a class="nav-link {{ if $.IsMenuCurrent "main" .}} active" aria-current="page {{ end }}" 
             href="{{ .URL }}" {{if eq .Params.blank true }} target="_blank" rel="noopener"{{ end }}> <h4>{{ .Name }}</h4></a>
           </li>
         {{ end }}
 
-        {{/* If privacy not found in menu, render a fallback link */}}
-        {{ if not (.Scratch.Get "hasPrivacy") }}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ "/privacy/" | relURL }}"><h4>Privacy Policy</h4></a>
-          </li>
-        {{ end }}
+        {{/* Always render a Privacy Policy link in the navbar */}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/privacy/" | relURL }}"><h4>Privacy Policy</h4></a>
+        </li>
         </ul>
       </div>
     </div>
