@@ -1,15 +1,27 @@
 <nav class="navbar navbar-expand-lg bg-base">
     <div class="container-fluid">
-      <a href="/"><img class="nav-logo" src="/images/Six-Sided-Heroes-Logo.webp" alt="Six Sided Heroes Logo"></a>
+  <a href="{{ "/" | absURL }}"><img class="nav-logo" src="{{ "/images/Six-Sided-Heroes-Logo.webp" | absURL }}" alt="Six Sided Heroes Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {{/* Track whether a privacy link is already present in the menu */}}
+        {{ .Scratch.Set "hasPrivacy" false }}
         {{ range .Site.Menus.main }}
+          {{ if or (eq .URL "/privacy/") (eq .Identifier "privacy") (eq .Name "Privacy") (eq .Name "Privacy Policy") }}
+            {{ .Scratch.Set "hasPrivacy" true }}
+          {{ end }}
           <li class="nav-item">
             <a class="nav-link {{ if $.IsMenuCurrent "main" .}} active" aria-current="page {{ end }}" 
             href="{{ .URL }}" {{if eq .Params.blank true }} target="_blank" rel="noopener"{{ end }}> <h4>{{ .Name }}</h4></a>
+          </li>
+        {{ end }}
+
+        {{/* If privacy not found in menu, render a fallback link */}}
+        {{ if not (.Scratch.Get "hasPrivacy") }}
+          <li class="nav-item">
+            <a class="nav-link" href="/privacy/"><h4>Privacy Policy</h4></a>
           </li>
         {{ end }}
         </ul>
