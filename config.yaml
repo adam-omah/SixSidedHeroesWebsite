@@ -23,6 +23,11 @@ markup:
     renderer:
       unsafe: true
 
+# Emit relative URLs instead of absolute ones. This makes the generated site
+# portable (works under project GitHub Pages path) without hardcoding baseURL.
+relativeURLs: true
+canonifyURLs: false
+
 
 # menu links via config file.
 menu:

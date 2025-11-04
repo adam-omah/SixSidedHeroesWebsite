@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-base">
     <div class="container-fluid">
-  <a href="{{ "/" | absURL }}"><img class="nav-logo" src="{{ "/images/Six-Sided-Heroes-Logo.webp" | absURL }}" alt="Six Sided Heroes Logo"></a>
+  <a href="{{ "/" | relURL }}"><img class="nav-logo" src="{{ "/images/Six-Sided-Heroes-Logo.webp" | relURL }}" alt="Six Sided Heroes Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,7 +21,7 @@
         {{/* If privacy not found in menu, render a fallback link */}}
         {{ if not (.Scratch.Get "hasPrivacy") }}
           <li class="nav-item">
-            <a class="nav-link" href="/privacy/"><h4>Privacy Policy</h4></a>
+            <a class="nav-link" href="{{ "/privacy/" | relURL }}"><h4>Privacy Policy</h4></a>
           </li>
         {{ end }}
         </ul>
