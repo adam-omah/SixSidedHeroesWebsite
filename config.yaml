@@ -1,15 +1,15 @@
 baseURL: https://www.sixsidedheroes.com/
 # Diable taxonmy pages (Defaults)
 disableKinds:
-- taxonomy
-- taxonomyTerm
+  - taxonomy
 defaultContentLanguage: en
 languageCode: en-us
 title: Six Sided Heroes
 
 
-# changes the default pagination
-paginate: 3
+# changes the default pagination (Hugo >= 0.128)
+pagination:
+  pagerSize: 3
 #changes the sumary lenght
 summaryLength: 20
 

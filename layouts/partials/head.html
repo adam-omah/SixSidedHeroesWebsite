@@ -4,13 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ .Site.Title }}{{ if not .IsHome }} - {{ .Title }}{{ end }}</title>
 
-{{ $opts := (dict "transplier" "libsass" "outputStyle" "compressed" "includePaths" (slice "node_modules")) }}
+{{/* Use the new CSS pipeline for Hugo >= 0.128: css.Sass */}}
+{{ $opts := (dict "outputStyle" "compressed" "includePaths" (slice "node_modules")) }}
 {{ if eq hugo.Environment "development"}}
-    {{ $opts = (dict "transplier" "libsass" "enableSourceMap" true "includePaths" (slice "node_modules")) }}
+    {{ $opts = (dict "enableSourceMap" true "includePaths" (slice "node_modules")) }}
 {{ end }}
 
 {{ $sass := resources.Get "scss/main.scss" }}
-{{ $style := $sass | resources.ToCSS $opts }}
+{{ $style := $sass | css.Sass $opts }}
 
 
 {{/*  links for favicon  */}}
